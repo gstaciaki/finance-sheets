@@ -1,4 +1,4 @@
-const getGoogleAccessToken = require('../functions/getGoogleAccessToken')
+import getGoogleAccessToken from "../functions/getGoogleAccessToken";
 
 test('request to get google access token', async () => {
     try {

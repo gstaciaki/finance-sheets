@@ -1,5 +1,5 @@
-const getMessageIdFromHistory = require('../functions/getMessageIdFromHistory')
-const webhookResponse = require('./data/webhookResponse.json')
+import getMessageIdFromHistory from '../functions/getMessageIdFromHistory'
+import webhookResponse from './data/webhookResponse.json'
 
 
 test('retrieve mail id', async () => {

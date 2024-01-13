@@ -12,8 +12,9 @@ app.use(express.json());
 
 app.post('/receiveGmailWebhook', async (req, res) => {
     try {
-        const result = await functions.getMessageIdFromHistory(req.body);
-        res.json({ result });
+        const messageId = await functions.getMessageIdFromHistory(req.body);
+        
+
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Internal Server Error' });
