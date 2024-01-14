@@ -1,5 +1,5 @@
 import axios from 'axios'
-import getGoogleAccessToken from './getGoogleAccessToken'
+import getGoogleAccessToken from './getGoogleAccessToken.js'
 
 const getAttachmentFromMessage = async (messageId) => {
 
