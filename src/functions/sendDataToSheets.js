@@ -20,7 +20,7 @@ const sendDataToSheets = async (csvString) => {
             valueInputOption: 'RAW'
         };
 
-        const values = data.map(row => [row[0], row[1], row[3]])
+        const values = data.map(row => [row[0], parseFloat(row[1]), row[3]])
         const body = {
             range: `'${extractMonth}'!A4:C`,
             majorDimension: 'ROWS',
